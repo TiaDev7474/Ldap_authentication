@@ -1,3 +1,3 @@
 export default function Login() {
-  return <div className="">Login</div>;
+  return <div className="text-red-500">Login</div>;
 }
