@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center h-screen">
+    <main className="flex justify-center  h-screen">
       <div>
         <ul className="flex">
           <li className="mr-4">
@@ -12,10 +12,10 @@ export default function Home() {
             About
           </li>
           <li>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Login
+            </button> 
             <Link href="/login">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                Login
-              </button>
             </Link>
           </li>
         </ul>
