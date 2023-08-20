@@ -53,7 +53,7 @@ export default function Login() {
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="mb-6 mt-6">
             <label
-              className="block text-gray-700 font-sans mb-3"
+              className="block text-gray-700 font-bold font-sans mb-3"
               htmlFor="matricule"
             >
               Matricules :
@@ -71,7 +71,7 @@ export default function Login() {
           </div>
           <div>
             <label
-              className="block text-gray-700 font-sans mb-3"
+              className="block text-gray-700 font-bold font-sans mb-3"
               htmlFor="password"
             >
               Mot de passe :
