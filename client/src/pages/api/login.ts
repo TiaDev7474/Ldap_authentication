@@ -6,7 +6,6 @@ type ResponseData = {
     message: string,
     status: 200 |201| 401,
     token?: string
-    
 }
 
 export default async function handler(

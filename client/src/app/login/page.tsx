@@ -56,7 +56,7 @@ export default function Login() {
               className="block text-gray-700 font-sans mb-3"
               htmlFor="matricule"
             >
-              Matricule :
+              Matricules :
             </label>
             <input
               className="border border-gray-300 bg-white focus:border-blue-500 text-gray-400 rounded-md px-3 py-2 mt-1 w-full focus:ring focus:ring-blue-500 font-sans"
