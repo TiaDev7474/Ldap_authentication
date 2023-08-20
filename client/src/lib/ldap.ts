@@ -1,5 +1,10 @@
 import  ldap  from 'ldapjs'
 
 export const LdapClient = ldap.createClient({
-     url:'ldap://192.168.43.123:10389'
+     url:'ldap://localhost:10389',
+     reconnect:true
+})
+
+LdapClient.on('error',(err) =>{
+     console.log(err.code)
 })
