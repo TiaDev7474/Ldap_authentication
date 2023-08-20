@@ -15,5 +15,5 @@ export default async function handler(
     const response = await autheticateWithLdap({ email , password})
     // console.log(response)
     
-    res.status(200).json({message: "Login response "})
+    res.status(200).json({message: `Login response ${response} `})
 }

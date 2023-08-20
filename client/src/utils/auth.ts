@@ -7,10 +7,10 @@ export async function autheticateWithLdap(
     return new Promise( (resolve , reject) => {
             LdapClient.bind('uid=admin, ou=system','secret',(error, result) => {
                   if(error){
-                      console.log(error)
+                    //   console.log(error)
                       reject(error)
                   }else{
-                    console.log(result)
+                    // console.log(result)
                       resolve(result)
                   }
                   
