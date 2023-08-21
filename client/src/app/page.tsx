@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import illustration from '../app/undraw_color_palette_re_dwy7.svg'
+
 
 export default function Home() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -61,13 +61,12 @@ export default function Home() {
       </div>
       <div className='mt-[10%] ml-[-10%]'>
     <Image  
-          src={illustration}
+          src="undraw_color_palette_re_dwy7.svg"
           alt="Picture of the author"
           sizes="100vw"
-          style={{
-            width: '40%',
-            height: 'auto',
-          }}
+          width={500}
+          height={500}
+         
           className='absolute'
           />        
     </div>

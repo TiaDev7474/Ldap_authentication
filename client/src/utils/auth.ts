@@ -1,4 +1,5 @@
-import { LdapClient } from "@/lib/ldap";
+import { LdapClient } from "../lib/ldap"
+
 
 export async function autheticateWithLdap(
     {numberID , password} :{ numberID: string , password:string}

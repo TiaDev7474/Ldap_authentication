@@ -1,5 +1,5 @@
-import { autheticateWithLdap } from "@/utils/auth";
-import { generateToken } from "@/utils/jwt";
+import { autheticateWithLdap } from "../../utils/auth";
+import { generateToken } from "../../utils/jwt";
 import { NextApiRequest, NextApiResponse } from "next";
 
 type ResponseData = {
@@ -24,7 +24,7 @@ export default async function handler(
            
         })
     }
-    const token = await generateToken({numberID , password})
+    const token = await generateToken({numberID:1525 , password:"simplepassword"})
     res.status(200).json({
         message: 'successfully authenticated',
         status:201,
